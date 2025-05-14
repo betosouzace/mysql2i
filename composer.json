@@ -1,0 +1,25 @@
+{
+    "name": "mysql2i/mysql2i",
+    "description": "A modern compatibility layer for mysql functions in newer PHP versions",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Beto Souza",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.6.0",
+        "ext-mysqli": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mysql2i\\": "src/Mysql2i/"
+        },
+        "files": [
+            "src/bootstrap.php"
+        ]
+    }
+} 
