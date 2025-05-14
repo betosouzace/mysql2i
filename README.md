@@ -18,7 +18,7 @@ The Mysql2i library:
 ### Via Composer
 
 ```bash
-composer require mysql2i/mysql2i:^1.0
+composer require mysql2i/mysql2i:dev-main
 ```
 
 The explicit version constraint is necessary until a stable release is published to Packagist.
