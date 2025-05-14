@@ -18,8 +18,10 @@ The Mysql2i library:
 ### Via Composer
 
 ```bash
-composer require mysql2i/mysql2i
+composer require mysql2i/mysql2i:^1.0
 ```
+
+The explicit version constraint is necessary until a stable release is published to Packagist.
 
 ### Manual Installation
 
@@ -60,6 +62,31 @@ The library uses several design patterns:
 2. **Facade Pattern**: Provides a simplified interface for the mysql functions
 3. **Singleton Pattern**: Maintains a single connection manager instance
 4. **Factory Pattern**: Creates and manages adapter instances
+
+## Publishing to Packagist
+
+If you want to publish this package to Packagist for easier installation via Composer:
+
+1. Create a repository on GitHub or another Git hosting service
+2. Push the code to the repository
+3. Go to https://packagist.org/packages/submit
+4. Submit your repository URL
+5. Once approved, you can install it via Composer with `composer require mysql2i/mysql2i`
+
+## Development
+
+### Running Tests
+
+```bash
+php tests/Mysql2iTest.php
+```
+
+### Creating a Release
+
+1. Update the version number in `composer.json`
+2. Commit and push changes
+3. Create a new release/tag in your Git repository
+4. Packagist will automatically update the package information
 
 ## License
 
